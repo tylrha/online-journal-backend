@@ -1,13 +1,13 @@
-<?
+<?php
 class Database{
     private $username = "root";
-    private $password = " ";
+    private $password = "";
     private $dbname   = "online_journal";
     private $connection;
 
     public function __construct()
     {
-        $this->connection = newMysqli($_SERVER["SERVER_NAME"], $this->username, $this->password, $this->dbname);
+        $this->connection = new mysqli($_SERVER["SERVER_NAME"], $this->username, $this->password, $this->dbname);
         if(!$this->connection){
             $this->connction->error;
         }
@@ -125,3 +125,5 @@ class Database{
 
 
 }
+
+$db = new Database();
