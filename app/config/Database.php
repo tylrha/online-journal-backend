@@ -7,7 +7,7 @@ class Database{
 
     public function __construct()
     {
-        $this->connection = new mysqli($_SERVER["SERVER_NAME"], $this->username, $this->password, $this->dbname);
+        $this->connection = new Mysqli($_SERVER["SERVER_NAME"], $this->username, $this->password, $this->dbname);
         if(!$this->connection){
             $this->connction->error;
         }
