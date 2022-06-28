@@ -46,7 +46,7 @@ class Database{
         }
     }
 
-    public function redirect(){
+    public function redirect($new_location){
         header("Location: ".$new_location);
     }
 
