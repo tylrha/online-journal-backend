@@ -54,8 +54,7 @@
 
     <header class="nav-bar header text-white">
         <div class="d-flex justify-content-between p-2">
-            
-            <div class="navbar-brand">
+            <div class="">
                 <h1><i class="bi bi-journals"></i>|SJN|</h1>
             </div>
             <div class="p-4">
