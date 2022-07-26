@@ -1,6 +1,5 @@
 <?php
 
-    // require ("..app/models/Admin.php");
     include (dirname(dirname(__FILE__))."/app/models/Admin.php");
     
 
